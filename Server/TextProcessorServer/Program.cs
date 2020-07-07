@@ -26,17 +26,17 @@ namespace TextProcessorServer
                 while (true)
                 {
                     var command = Console.ReadLine();
-                    if (command == "создание словаря")
+                    if (command == "create")
                     {
-                        Console.WriteLine("Введите путь к файлу для создания словаря");
+                        Console.WriteLine("Enter file path");
                         dictionaryService.Create(Console.ReadLine());
                     }
-                    else if (command == "обновление словаря")
+                    else if (command == "update")
                     {
-                        Console.WriteLine("Введите путь к файлу для обновления словаря");
+                        Console.WriteLine("Enter file path");
                         dictionaryService.Update(Console.ReadLine());
                     }
-                    else if (command == "очистить словарь")
+                    else if (command == "delete")
                     {
                         dictionaryService.Delete();
                     }

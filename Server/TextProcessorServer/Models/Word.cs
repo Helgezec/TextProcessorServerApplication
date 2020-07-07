@@ -20,14 +20,14 @@ namespace TextProcessorServer.Models
         public int Id { get; set; }
 
         /// <summary>
-        /// Текстовое представление слова
+        /// Text representation of word
         /// </summary>
         [MaxLength(MaxLength)]
         [MinLength(MinLength)]
         public string Value { get; set; }
 
         /// <summary>
-        /// Частота, с которой встречается слово
+        /// Frequency with which the word occurs
         /// </summary>
         public int Frequency { get; set; }
     }
